@@ -1,7 +1,6 @@
 #!/bin/bash
-dir_pwd="$PWD"
 dir_output="${PWD}/output"
-mkdir -p $dir_output 2>/dev/null
+mkdir -p "$dir_output" 2>/dev/null
 
 bkr() {
     script_name=$1
