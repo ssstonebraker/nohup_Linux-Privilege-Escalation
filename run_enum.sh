@@ -9,6 +9,7 @@ bkr() {
     (nohup "$@" &>"$output_file" &)
 }
 
+bkr ./bangenum.sh
 bkr ./LinEnum.sh -e "$dir_output" -t 
 bkr ./lse.sh 
 bkr ./lse1.sh -l 1

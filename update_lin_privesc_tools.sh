@@ -9,6 +9,7 @@ curl -s -L -O https://raw.githubusercontent.com/jondonas/linux-exploit-suggester
 curl -s -L -O https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh
 curl -s -L -O https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy32
 curl -s -L -O https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
+curl -s -L -O https://raw.githubusercontent.com/bngr/OSCP-Scripts/master/bangenum.sh
 file_archive="$PWD"/linpriv.tar.gz
 [ -f "$file_archive" ] && rm "$file_archive"
 cp -f "$PWD"/lse.sh "$PWD"/lse1.sh
