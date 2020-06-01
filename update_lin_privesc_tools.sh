@@ -11,7 +11,9 @@ curl -s -L -O https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/ps
 curl -s -L -O https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
 file_archive="$PWD"/linpriv.tar.gz
 [ -f "$file_archive" ] && rm "$file_archive"
+cp -f "$PWD"/lse.sh "$PWD"/lse1.sh
+cp -f "$PWD"/lse.sh "$PWD"/lse2.sh
 chmod +x "$PWD"/*
-tar czvf /tmp/linpriv.tar.gz "$PWD" &>/dev/null
+tar czvf /tmp/linpriv.tar.gz . &>/dev/null
 cp /tmp/linpriv.tar.gz "$PWD"
 echo "[*] - Update complete, files at $PWD, archive at $file_archive"
